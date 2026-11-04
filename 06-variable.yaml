@@ -9,8 +9,8 @@
       ansible.builtin.debug:
         msg: "I got {{ Property }} from my father"
 
-- name: Print task level variable again
-  vars:
-    Property: "20 Acres"
-  ansible.builtin.debug:
-    msg: "I got {{ Property }} from my father"
+    - name: Print task level variable again
+      vars:
+      Property: "20 Acres"
+      ansible.builtin.debug:
+        msg: "I got {{ Property }} from my father"
