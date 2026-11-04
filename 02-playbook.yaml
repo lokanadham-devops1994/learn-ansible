@@ -1,0 +1,8 @@
+- name: demo on debug
+  hosts: local
+  connection: local
+  gather_facts: false 
+  tasks:
+    - name: print Hello World!
+      ansible.builtin.debug:
+        msg: "Hello World!"
