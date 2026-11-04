@@ -1,4 +1,4 @@
--student:
+- student:
 # "-" indicates that the following lines are part of a list item in YAML format
   name: John Doe
   firstname: John

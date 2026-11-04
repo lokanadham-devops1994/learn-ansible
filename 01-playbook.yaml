@@ -1,0 +1,7 @@
+- name: ping demo # This is the name of the playbook, which is a human-readable description of what the playbook does. In this case, it indicates that the playbook is designed to perform a ping operation as a demonstration.
+  hosts: localhost # Targeting the localhost for the ansible-server itself
+  connection: local # it will not (expect credentials) use ssh to connect to the localhost, instead it will use local connection
+  gather_facts: false # it will not gather facts about the localhost
+  tasks:   # tasks (tasks=modules=collections) section is where we define the actions to be performed on the target hosts
+    - name: ping the localhost
+      ping:
