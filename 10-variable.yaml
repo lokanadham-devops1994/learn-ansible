@@ -1,0 +1,8 @@
+- name: print greetings
+  hosts: local
+  connection: local
+  gather_facts: false 
+  tasks:
+    - name: print gereetings
+      ansible.builtin.debug:
+        msg: "Hello {{person_name}}"
