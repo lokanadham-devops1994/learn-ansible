@@ -1,0 +1,12 @@
+- name: demo on variable from external file
+  hosts: local
+  connection: local
+  gather_facts: false 
+  vars_files:
+    - course.yaml
+  vars:
+    my_variable: "Hello World!_Ansible is working fine"
+  tasks:
+    - name: print Course name, Trainer name, Duration and Hello World!
+      ansible.builtin.debug:
+        msg: "I am learning {{ course }} with {{ trainer }} for {{ duration }} and {{ my_variable }}"
