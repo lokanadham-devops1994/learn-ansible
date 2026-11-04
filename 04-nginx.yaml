@@ -1,8 +1,13 @@
 - name: install and start nginx
   hosts: frontend_servers
-  become: true
+  become: true # Providing sudo access
   tasks:
     - name: install nginx
       package:
         name: nginx
         state: present
+    - name: start nginx
+      service:
+        name: nginx
+        state: started
+        enabled: true
