@@ -1,0 +1,13 @@
+- name: demo on variable
+  hosts: local
+  connection: local
+  gather_facts: false 
+  vars:
+    my_variable: "Hello World!_Ansible is working fine"
+    course_name: "Learn Ansible"
+    trainer_name: "Sivakumar Reddy M"
+    duration: "10 hours"
+  tasks:
+    - name: print Hello World!
+      ansible.builtin.debug:
+        msg: "I am Learning {{ course_name }} with {{ trainer_name }} for {{ duration }}, and the message is {{ my_variable }}" 
