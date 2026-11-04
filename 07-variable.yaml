@@ -3,7 +3,7 @@
   connection: local
   gather_facts: false 
   vars_files:
-    - course.yaml
+  - course.yaml
   tasks:
     - name: print Course name, Trainer name, Duration and Hello World!
       ansible.builtin.debug:
