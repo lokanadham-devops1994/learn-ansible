@@ -1,0 +1,31 @@
+-student:
+# "-" indicates that the following lines are part of a list item in YAML format
+  name: John Doe
+  firstname: John
+  lastname: Doe
+  studentid: '123456'
+  dateofbirth: '1998-05-15'
+  email: john.doe@example.com
+  age: '25'
+  addresses:
+    - type: Temporary
+      doornumber: '15P,8-205'
+      streetname: 'Prasoonanagar Main Road, Chinthal,Quthbullapur'
+      city: Hyderabad
+    - type: Permanent
+      doornumber: 2-81
+      streetname: 'Polaki, Gollalavalasa, Vondanpeta Street'
+      city: 'Srikakulam, Andhra Pradesh'
+  Skills:
+    OperatingSystem: Linux
+    ScriptingLanguage: Bash/ShellScripting
+    ProgrammingLanguage: Python
+    ConfigurationManagementTool: Ansible
+    Integrated development environment (IDE): VSCode
+  Courses:
+    - CourseName: Ansible
+      CourseDuration: 2 months
+      CourseInstructor: Jane Smith
+    - CourseName: Python Programming
+      CourseDuration: 3 months
+      CourseInstructor: Michael Johnson

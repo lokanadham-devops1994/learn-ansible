@@ -1,0 +1,21 @@
+<student>
+    <name>John Doe</name>
+    <firstname>John</firstname>
+    <lastname>Doe</lastname>
+    <studentid>123456</studentid>
+    <dateofbirth>1998-05-15</dateofbirth>
+    <addresses>
+        <address type="Temporary">
+            <doornumber>15P,8-205</doornumber>
+            <streetname>Prasoonanagar Main Road, Chinthal,Quthbullapur</streetname>
+            <city>Hyderabad</city>
+        </address>
+        <address type="Permanent">
+            <doornumber>2-81</doornumber>
+            <streetname>Gollalavalasa, Vondanpeta Street</streetname>
+            <city>Srikakulam</city>
+        </address>
+    </addresses>
+    <email>john.doe@example.com</email>
+    <age>25</age>
+</student>
