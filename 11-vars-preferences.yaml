@@ -4,12 +4,12 @@
   gather_facts: false 
   vars:
     course: "Ansible for PLAY"
-  vars_prompt:
-    - name: "course"
-      prompt: "Please enter the course name"
-      private: no
-  vars_files:
-  - course.yaml
+  # vars_prompt:
+  #   - name: "course"
+  #     prompt: "Please enter the course name"
+  #     private: no
+  # vars_files:
+  # - course.yaml
   tasks:
     - name: print Course information
       # vars:
