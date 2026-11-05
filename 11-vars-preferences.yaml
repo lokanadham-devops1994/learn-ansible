@@ -2,18 +2,18 @@
   hosts: local
   connection: local
   gather_facts: false 
-  vars:
-    course: "Ansible for Play"
+  # vars:
+  #   course: "Ansible for Play!"
   # vars_prompt:
   #   - name: "course"
-  #     prompt: "Please enter the course name"
+  #     prompt: "Please enter the course name!"
   #     private: no
   # vars_files:
   # - course.yaml
   tasks:
     - name: print Course information
       # vars:
-      #   course: "Ansible for task"
+      #   course: "Ansible for task!"
       ansible.builtin.debug:
         msg: "I am learning {{ course }}"
 
@@ -22,3 +22,4 @@
 # 3. external file
 # 4. Prompt
 # 5. Play
+# 6. Inventory
