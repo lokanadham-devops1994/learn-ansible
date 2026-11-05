@@ -3,7 +3,7 @@
   connection: local
   gather_facts: false 
   vars:
-    course: "Ansible for PLAY"
+    course: "Ansible for Play"
   # vars_prompt:
   #   - name: "course"
   #     prompt: "Please enter the course name"
@@ -21,3 +21,4 @@
 # 2. Task
 # 3. external file
 # 4. Prompt
+# 5. Play
