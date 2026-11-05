@@ -1,0 +1,18 @@
+- name: demo on variable from external file
+  hosts: local
+  connection: local
+  gather_facts: false 
+  vars:
+    course: "Ansible for PLAY"
+  vars_prompt:
+    - name: "course"
+      prompt: "Please enter the course name"
+      private: no
+  vars_files:
+  - course.yaml
+  tasks:
+    - name: print Course information
+      vars:
+        course: "Ansible for task"
+      ansible.builtin.debug:
+        msg: "I am learning {{ course }}"
