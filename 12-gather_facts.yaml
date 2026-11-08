@@ -1,0 +1,7 @@
+- name: print facts
+  host: local
+  connection: local
+  tasks:
+  -name: print facts
+  ansible.builtin.debug:
+    msg: "I am learning {{ ansible_facts }}"
